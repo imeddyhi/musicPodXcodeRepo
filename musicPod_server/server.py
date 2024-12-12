@@ -7,8 +7,8 @@ import json
 app = FastAPI()
 
 # Rutas de los archivos de música y portada
-MUSIC_FOLDER = '/Users/eddy/Desktop/musicPod/music'
-ALBUM_ART_FOLDER = '/Users/eddy/Desktop/musicPod/music/albumart'
+MUSIC_FOLDER = '../musicPod_server/music'
+ALBUM_ART_FOLDER = '../musicPod_server/music/albumart'
 
 @app.get("/music", response_model=List[Dict[str, str]])
 def get_songs():
